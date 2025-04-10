@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Motion Gym</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <i class="fas fa-dumbbell"></i>
+        <span>PRIME MOTION</span>
+      </div>
+      
+      <!-- Mega Menu -->
+      <nav class="mega-menu-container">
+        <div class="mega-menu-trigger">
+          <a href="#" class="mega-menu-link">Inicio</a>
+          <a href="#about" class="mega-menu-link">Nosotros</a>
+          <a href="#classes" class="mega-menu-link" id="classes-trigger">Clases <i class="fas fa-chevron-down"></i></a>
+          <a href="#trainers" class="mega-menu-link" id="trainers-trigger">Entrenadores <i class="fas fa-chevron-down"></i></a>
+          <a href="#pricing" class="mega-menu-link" id="pricing-trigger">Precios <i class="fas fa-chevron-down"></i></a>
+          <a href="#contact" class="mega-menu-link">Contacto</a>
+        </div>
+        
+        <!-- Mega Menu Dropdowns -->
+        <div class="mega-menu-dropdown" id="classes-dropdown">
+          <div class="mega-menu-content">
+            <div class="mega-menu-column">
+              <h3>Clases de Cardio</h3>
+              <ul>
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Spinning</a></li>
+                <li><a href="#">Zumba</a></li>
+                <li><a href="#">Aeróbicos</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Clases de Fuerza</h3>
+              <ul>
+                <li><a href="#">Entrenamiento Funcional</a></li>
+                <li><a href="#">CrossFit</a></li>
+                <li><a href="#">Levantamiento de Pesas</a></li>
+                <li><a href="#">Entrenamiento en Circuito</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Clases de Mente-Cuerpo</h3>
+              <ul>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Pilates</a></li>
+                <li><a href="#">Meditación</a></li>
+                <li><a href="#">Estiramiento</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <div class="mega-menu-featured">
+                <img src="https://source.unsplash.com/random/300x200/?gym-class" alt="Clase destacada">
+                <h4>¡Nueva clase de HIIT!</h4>
+                <p>Inscríbete ahora y obtén un 20% de descuento</p>
+                <a href="#" class="btn btn-primary btn-sm">Inscribirme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mega-menu-dropdown" id="trainers-dropdown">
+          <div class="mega-menu-content">
+            <div class="mega-menu-column">
+              <h3>Entrenadores de Cardio</h3>
+              <ul>
+                <li><a href="#">Carlos Mendoza</a></li>
+                <li><a href="#">Laura Sánchez</a></li>
+                <li><a href="#">Roberto Gómez</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Entrenadores de Fuerza</h3>
+              <ul>
+                <li><a href="#">Miguel Ángel Torres</a></li>
+                <li><a href="#">Ana María López</a></li>
+                <li><a href="#">Javier Rodríguez</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Instructores de Yoga</h3>
+              <ul>
+                <li><a href="#">Sofía Martínez</a></li>
+                <li><a href="#">Daniel Herrera</a></li>
+                <li><a href="#">Lucía Fernández</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <div class="mega-menu-featured">
+                <img src="https://source.unsplash.com/random/300x200/?fitness-trainer" alt="Entrenador destacado">
+                <h4>Entrenador del mes</h4>
+                <p>Conoce a nuestro entrenador destacado y su metodología</p>
+                <a href="#" class="btn btn-primary btn-sm">Conocer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mega-menu-dropdown" id="pricing-dropdown">
+          <div class="mega-menu-content">
+            <div class="mega-menu-column">
+              <h3>Membresías Mensuales</h3>
+              <ul>
+                <li><a href="#">Plan Básico</a></li>
+                <li><a href="#">Plan Premium</a></li>
+                <li><a href="#">Plan Elite</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Membresías Anuales</h3>
+              <ul>
+                <li><a href="#">Plan Básico Anual</a></li>
+                <li><a href="#">Plan Premium Anual</a></li>
+                <li><a href="#">Plan Elite Anual</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <h3>Planes Corporativos</h3>
+              <ul>
+                <li><a href="#">Pequeñas Empresas</a></li>
+                <li><a href="#">Medianas Empresas</a></li>
+                <li><a href="#">Grandes Corporaciones</a></li>
+              </ul>
+            </div>
+            <div class="mega-menu-column">
+              <div class="mega-menu-featured">
+                <img src="https://source.unsplash.com/random/300x200/?gym-membership" alt="Oferta especial">
+                <h4>Oferta de Verano</h4>
+                <p>¡50% de descuento en tu primera mensualidad!</p>
+                <a href="#" class="btn btn-primary btn-sm">Ver oferta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="header-actions">
+        <div class="theme-toggle">
+          <button class="theme-btn" id="theme-toggle-btn">
+            <i class="fas fa-sun theme-icon-light"></i>
+            <i class="fas fa-moon theme-icon-dark"></i>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown">
+            <div class="theme-dropdown-item" data-theme="light">Claro</div>
+            <div class="theme-dropdown-item" data-theme="dark">Oscuro</div>
+            <div class="theme-dropdown-item" data-theme="system">Sistema</div>
+          </div>
+        </div>
+        <button class="btn btn-outline hidden-mobile">Iniciar Sesión</button>
+        <button class="btn btn-primary">Únete Ahora</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-header">
+        <div class="logo">
+          <i class="fas fa-dumbbell"></i>
+          <span>PRIME MOTION</span>
+        </div>
+        <button class="mobile-menu-close" id="mobile-menu-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#classes">Clases</a>
+        <a href="#trainers">Entrenadores</a>
+        <a href="#pricing">Precios</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <div class="mobile-actions">
+        <button class="btn btn-outline">Iniciar Sesión</button>
+        <button class="btn btn-primary">Únete Ahora</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section with Video Background -->
+    <!-- Make sure video file exists in videos/ directory and has correct path -->
+    <section class="hero">
+      <div class="hero-video-container">
+        <video autoplay muted loop playsinline class="hero-video"
+          <source src="videos/entrenamiento.mp4" type="video/mp4">
+          <source src="videos/entrenamiento.webm" type="video/webm">
+          Tu navegador no soporta videos HTML5.
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-container">
+          <div class="badge animate-badge">Nuevo Equipamiento</div>
+          <h1 class="animate-title">Conecta Tu Mente y Tu Cuerpo, <br><span>Supera Tus Limites</span></h1>
+          <p class="animate-text">Únete a Prime Motion Gym y experimenta instalaciones de última generación, entrenadores expertos y una comunidad que te apoyará para alcanzar tus objetivos fitness.</p>
+          <div class="hero-buttons animate-buttons">
+            <button class="btn btn-primary btn-lg">Prueba Gratuita</button>
+            <button class="btn btn-outline btn-lg">Ver Planes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>¿Por Qué Elegir <span>Prime Motion</span>?</h2>
+          <p>Ofrecemos una experiencia fitness premium con equipamiento de primera, entrenadores expertos y un ambiente motivador para ayudarte a alcanzar tus metas.</p>
+        </div>
+        
+        <!-- Animated Counters -->
+        <div class="counters">
+          <div class="counter-item">
+            <div class="counter-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="counter-number" data-target="500">0</div>
+            <div class="counter-label">Socios Satisfechos</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="counter-number" data-target="50">0</div>
+            <div class="counter-label">Clases Semanales</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="counter-number" data-target="20">0</div>
+            <div class="counter-label">Entrenadores Certificados</div>
+          </div>
+          <div class="counter-item">
+            <div class="counter-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="counter-number" data-target="10">0</div>
+            <div class="counter-label">Años de Experiencia</div>
+          </div>
+        </div>
+        
+        <div class="features-grid">
+          <div class="card feature-card">
+            <div class="card-content">
+              <div class="feature-icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
+              <h3>Equipamiento Moderno</h3>
+              <p>Máquinas de última generación y pesas libres para todo tipo de entrenamiento.</p>
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="card-content">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Entrenadores Expertos</h3>
+              <p>Profesionales certificados para guiarte en tu camino a tus metas.</p>
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="card-content">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Acceso 24/7</h3>
+              <p>Entrena según tu horario con acceso las 24 horas a nuestras instalaciones.</p>
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="card-content">
+              <div class="feature-icon">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <h3>Clases Grupales</h3>
+              <p>Sesiones grupales energizantes dirigidas por instructores motivadores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nuestras <span>Clases</span></h2>
+          <p>Únete a nuestra variedad de clases diseñadas para todos los niveles y objetivos fitness.</p>
+        </div>
+        <div class="classes-grid">
+          <div class="card class-card">
+            <div class="card-image"> <img src="images/hiit.jpg" alt="hiit"> </div>
+            <div class="card-content">
+              <h3>Entrenamiento HIIT</h3>
+              <p>Entrenamiento de intervalos de alta intensidad para maximizar la quema de calorías y mejorar la salud cardiovascular.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Lun, Mié, Vie - 6:00 AM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+          <div class="card class-card">
+            <div class="card-image"><img src="images/musculation.jpg" alt="musculation"></div>
+            <div class="card-content">
+              <h3>Fuerza y Acondicionamiento</h3>
+              <p>Desarrolla músculo y mejora tu fuerza general con nuestro programa integral de entrenamiento de fuerza.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Mar, Jue - 5:30 PM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+          <div class="card class-card">
+            <div class="card-image"><img src="images/yoga.jpg" alt="Yoga"></div>
+            <div class="card-content">
+              <h3>Yoga Flow</h3>
+              <p>Mejora la flexibilidad, el equilibrio y la claridad mental con nuestras rejuvenecedoras sesiones de yoga.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Lun, Mié, Vie - 7:30 PM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+          <div class="card class-card">
+            <div class="card-image"><img src="images/spinning.jpeg" alt="Spinnig"></div>
+            <div class="card-content">
+              <h3>Spinning</h3>
+              <p>Entrenamientos de ciclismo indoor de alta energía con música motivadora y dirigidos por instructores expertos.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Mar, Jue, Sáb - 8:00 AM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+          <div class="card class-card">
+            <div class="card-image"><img src="images/boxeo.jpg" alt="Boxeo">></div>
+            <div class="card-content">
+              <h3>Boxeo</h3>
+              <p>Aprende técnicas de boxeo mientras realizas un entrenamiento completo que mejora la coordinación y la fuerza.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Lun, Mié - 6:30 PM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+          <div class="card class-card">
+            <div class="card-image"> <img src="images/crossfit.jpg" alt="CrossFit">></div>
+            <div class="card-content">
+              <h3>CrossFit</h3>
+              <p>Desafíate con movimientos funcionales variados realizados a alta intensidad.</p>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                <span>Mar, Jue, Sáb - 9:30 AM</span>
+              </div>
+              <button class="btn btn-outline full-width">Reservar Clase</button>
+            </div>
+          </div>
+        </div>
+        <div class="view-all">
+          <button class="btn btn-outline">Ver Todas las Clases <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+      <div class="container">
+        <div class="section-title">
+          <h2>Conoce a Nuestros <span>Entrenadores</span></h2>
+          <p>Nuestros entrenadores certificados están aquí para guiarte en tu viaje fitness con experiencia y motivación.</p>
+        </div>
+        <div class="trainers-grid">
+          <div class="card trainer-card">
+            <div class="card-image"><img src="images/entrenadorFuerza.jpg"></div>
+            <div class="card-content">
+              <h3>Alejandro Jiménez</h3>
+              <p class="trainer-specialty">Fuerza y Acondicionamiento</p>
+              <p>Más de 10 años de experiencia en entrenamiento de fuerza y rendimiento atlético.</p>
+            </div>
+          </div>
+          <div class="card trainer-card">
+              <div class="card-image"> <img src="images/profesora-yoga.jpg"></div>
+              <div class="card-content">
+                  <h3>Sara Martínez</h3>
+              <p class="trainer-specialty">Yoga y Pilates</p>
+              <p>Instructora certificada de yoga con enfoque en la conexión mente-cuerpo.</p>
+            </div>
+          </div>
+          <div class="card trainer-card">
+            <div class="card-image"><img src="images/entrenador-hiit.jpg"></div>
+            <div class="card-content">
+              <h3>Aaron Lopez</h3>
+              <p class="trainer-specialty">HIIT y CrossFit</p>
+              <p>Ex atleta especializado en métodos de entrenamiento de alta intensidad.</p>
+            </div>
+          </div>
+          <div class="card trainer-card">
+            <div class="card-image"><img src="images/nutricionista.jpg"></div>
+            <div class="card-content">
+              <h3>Elena Contreras</h3>
+              <p class="trainer-specialty">Nutrición y Pérdida de Peso</p>
+              <p>Nutricionista y entrenadora personal enfocada en resultados sostenibles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-title">
+          <h2>Planes de <span>Membresía</span></h2>
+          <p>Elige la membresía que se adapte a tu estilo de vida y objetivos fitness.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="card pricing-card">
+            <div class="card-content">
+              <h3>Básico</h3>
+              <div class="price">
+                <span class="price-amount">$15.000</span>
+                <span class="price-period"> por mes</span>
+              </div>
+              <p class="pricing-description">Perfecto para principiantes</p>
+              <ul class="features-list">
+                <li><i class="fas fa-chevron-right"></i> Acceso a instalaciones del gimnasio</li>
+                <li><i class="fas fa-chevron-right"></i> Uso de equipamiento básico</li>
+                <li><i class="fas fa-chevron-right"></i> Acceso a vestuarios</li>
+                <li><i class="fas fa-chevron-right"></i> 2 clases grupales al mes</li>
+                <li><i class="fas fa-chevron-right"></i> Evaluación fitness</li>
+              </ul>
+              <button class="btn btn-outline full-width">Elegir Plan</button>
+            </div>
+          </div>
+          <div class="card pricing-card popular">
+            <div class="popular-badge">MÁS POPULAR</div>
+            <div class="card-content">
+              <h3>Premium</h3>
+              <div class="price">
+                <span class="price-amount">$20.000</span>
+                <span class="price-period"> por mes</span>
+              </div>
+              <p class="pricing-description">Nuestro plan más popular</p>
+              <ul class="features-list">
+                <li><i class="fas fa-chevron-right"></i> Acceso al gimnasio 24/7</li>
+                <li><i class="fas fa-chevron-right"></i> Uso completo del equipamiento</li>
+                <li><i class="fas fa-chevron-right"></i> Clases grupales ilimitadas</li>
+                <li><i class="fas fa-chevron-right"></i> 1 sesión de entrenamiento personal/mes</li>
+                <li><i class="fas fa-chevron-right"></i> Consulta nutricional</li>
+                <li><i class="fas fa-chevron-right"></i> Acceso a la app móvil</li>
+              </ul>
+              <button class="btn btn-primary full-width">Elegir Plan</button>
+            </div>
+          </div>
+          <div class="card pricing-card">
+            <div class="card-content">
+              <h3>Elite</h3>
+              <div class="price">
+                <span class="price-amount">$50.000</span>
+                <span class="price-period"> por mes</span>
+              </div>
+              <p class="pricing-description">Para entusiastas serios del fitness</p>
+              <ul class="features-list">
+                <li><i class="fas fa-chevron-right"></i> Acceso al gimnasio 24/7</li>
+                <li><i class="fas fa-chevron-right"></i> Uso completo del equipamiento</li>
+                <li><i class="fas fa-chevron-right"></i> Clases grupales ilimitadas</li>
+                <li><i class="fas fa-chevron-right"></i> 4 sesiones de entrenamiento personal/mes</li>
+                <li><i class="fas fa-chevron-right"></i> Plan de entrenamiento personalizado</li>
+                <li><i class="fas fa-chevron-right"></i> Planificación nutricional</li>
+                <li><i class="fas fa-chevron-right"></i> Reserva prioritaria de clases</li>
+                <li><i class="fas fa-chevron-right"></i> Pases para invitados (2/mes)</li>
+              </ul>
+              <button class="btn btn-outline full-width">Elegir Plan</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-note">
+          <p>Todos los planes incluyen garantía de devolución de dinero de 7 días. No se requieren contratos a largo plazo.</p>
+          <button class="btn btn-primary">Contáctanos Para Planes Corporativos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section with CSS-only Carousel -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Lo Que Dicen Nuestros <span>Miembros</span></h2>
+          <p>Escucha a nuestra comunidad sobre sus experiencias y transformaciones.</p>
+        </div>
+        
+        <div class="testimonial-carousel">
+          <input type="radio" name="testimonial-control" id="testimonial-1" checked>
+          <input type="radio" name="testimonial-control" id="testimonial-2">
+          <input type="radio" name="testimonial-control" id="testimonial-3">
+          <input type="radio" name="testimonial-control" id="testimonial-4">
+          <input type="radio" name="testimonial-control" id="testimonial-5">
+          
+          <div class="testimonial-track">
+            <div class="testimonial-slide">
+              <div class="card">
+                <div class="card-content">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Prime Motion cambió completamente mi enfoque del fitness. Los entrenadores son conocedores y la comunidad es muy solidaria. He logrado resultados que nunca pensé posibles."</p>
+                  <div class="testimonial-author">
+                    <div class="author-image" style="background-image: url('https://source.unsplash.com/random/100x100/?man');"></div>
+                    <div class="author-info">
+                      <h4>David Contreras</h4>
+                      <p>Miembro desde hace 2 años</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="card">
+                <div class="card-content">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"La variedad de clases me mantiene motivada y el acceso 24/7 se adapta perfectamente a mi agenda ocupada. Las instalaciones siempre están limpias y el equipamiento es de primera."</p>
+                  <div class="testimonial-author">
+                    <div class="author-image" style="background-image: url('https://source.unsplash.com/random/100x100/?woman');"></div>
+                    <div class="author-info">
+                      <h4>Carolina Gonzalez</h4>
+                      <p>Miembro desde hace 1 año</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="card">
+                <div class="card-content">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"He estado en muchos gimnasios a lo largo de los años, pero Prime Motion destaca por su ambiente comunitario y enfoque personalizado. Los entrenadores recuerdan tu nombre y tus objetivos."</p>
+                  <div class="testimonial-author">
+                    <div class="author-image" style="background-image: url('https://source.unsplash.com/random/100x100/?man-2');"></div>
+                    <div class="author-info">
+                      <h4>Roberto Vargas</h4>
+                      <p>Miembro desde hace 3 años</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="card">
+                <div class="card-content">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Desde que me uní a Prime Motion, he perdido 15 kilos y me siento con más energía que nunca. Los entrenadores realmente se preocupan por tu progreso y te ayudan a superar tus límites."</p>
+                  <div class="testimonial-author">
+                    <div class="author-image" style="background-image: url('https://source.unsplash.com/random/100x100/?woman-2');"></div>
+                    <div class="author-info">
+                      <h4>María Gómez</h4>
+                      <p>Miembro desde hace 1 año</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="card">
+                <div class="card-content">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Las clases de yoga han transformado mi bienestar físico y mental. El ambiente es acogedor y los instructores son increíblemente atentos. ¡No puedo imaginar entrenar en otro lugar!"</p>
+                  <div class="testimonial-author">
+                    <div class="author-image" style="background-image: url('https://source.unsplash.com/random/100x100/?woman-3');"></div>
+                    <div class="author-info">
+                      <h4>Lucía Fernández</h4>
+                      <p>Miembro desde hace 6 meses</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-controls">
+            <label for="testimonial-1"></label>
+            <label for="testimonial-2"></label>
+            <label for="testimonial-3"></label>
+            <label for="testimonial-4"></label>
+            <label for="testimonial-5"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-container">
+          <h2>¿Listo para Comenzar tu Viaje Fitness?</h2>
+          <p>Únete a Prime Motion hoy y da el primer paso hacia un tú más saludable y fuerte. ¡Regístrate ahora y obtén tu primera semana gratis!</p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary btn-lg">Prueba Gratuita</button>
+            <button class="btn btn-outline btn-lg">Programar un Tour</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Ponte en <span>Contacto</span></h2>
+            <p>¿Tienes preguntas sobre nuestro gimnasio u opciones de membresía? Contáctanos y nuestro equipo te responderá lo antes posible.</p>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-item-content">
+                <h3>Ubicación</h3>
+                <p>Calle Gral Belgrano 1600, San Sallvador de Jujuy, Jujuy</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-item-content">
+                <h3>Teléfono</h3>
+                <p>(388) 472-4683</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-item-content">
+                <h3>Email</h3>
+                <p>info@primemotion.com</p>
+              </div>
+            </div>
+            <div class="hours">
+              <h3>Horario de Atención</h3>
+              <div class="hours-grid">
+                <div>Lunes - Viernes</div>
+                <div>5:00 AM - 23:00 PM</div>
+                <div>Sábado - Domingo</div>
+                <div>7:00 AM - 21:00 PM</div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-form-card">
+            <h3>Envíanos un Mensaje</h3>
+            <form>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="Tu email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" class="form-control" placeholder="Asunto">
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" class="form-control" placeholder="Tu mensaje" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Google Maps -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.612091815784!2d-65.30541912539613!3d-24.18533338481081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f422aacca93%3A0xe8343226aea2603a!2sGral.%20Belgrano%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1744138228647!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <i class="fas fa-dumbbell"></i>
+            <span>PRIME MOTION</span>
+          </div>
+          <p class="footer-about">Eleva tu viaje fitness con equipamiento de última generación y orientación experta.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading">Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#classes">Clases</a></li>
+            <li><a href="#trainers">Entrenadores</a></li>
+            <li><a href="#pricing">Precios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Servicios</h3>
+          <ul class="footer-links">
+            <li><a href="#">Entrenamiento Personal</a></li>
+            <li><a href="#">Clases Grupales</a></li>
+            <li><a href="#">Planificación Nutricional</a></li>
+            <li><a href="#">Evaluación Fitness</a></li>
+            <li><a href="#">Programas de Pérdida de Peso</a></li>
+            <li><a href="#">Rendimiento Deportivo</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3 class="footer-heading">Boletín Informativo</h3>
+          <p>Suscríbete a nuestro boletín para recibir las últimas actualizaciones y ofertas.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Tu dirección de email">
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Prime Motion Gym. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Servicio</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
